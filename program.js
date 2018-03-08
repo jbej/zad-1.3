@@ -10,8 +10,8 @@ process.stdin.on('readable', function() {
                 process.stdout.write('Quitting app!\n');
                 process.exit();
                 break;
-            case '/language': 
-                process.stdout.write('All languages:' + process.evn.language + '\n'); //(\n) jumps to the next line
+            case '/lang': 
+                process.stdout.write('All languages:' + process.evn.lang + '\n'); //(\n) jumps to the next line
                 break;
             case '/node':
                 process.stdout.write('Node version:' + process.versions.node + '\n'); //(\n) jumps to the next line
